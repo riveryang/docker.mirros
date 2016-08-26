@@ -6,6 +6,6 @@ MAINTAINER River Yang "comicme_yanghe@icloud.com"
 
 ADD sources.list /etc/apt/
 RUN apt-get update
-RUN apt-get install -y redis-tools
+RUN apt-get install -y redis-tools redis-server
 
-CMD [ "/bin/bash" ]
+EXPOSE 6379
